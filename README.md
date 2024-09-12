@@ -70,4 +70,7 @@ Data Analysis featured following syntaxes:
 ```Power BI
 Table.AddColumn(#"Removed Columns3", "Age", each Date.From(DateTime.Date(2020,01,01)) - [Birth date], type duration)
 ```
+```Power BI
+Table.AddColumn(#"Renamed Columns", "Age Group", each if [Age] < 18 then "< 18" else if [Age] < 25
+```
 
