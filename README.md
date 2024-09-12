@@ -36,6 +36,7 @@ The initial data took several tasks to elaborate
 4) Added columns to enable more advanced DAX calculations.
 5) DAX calculations
 6) Built concise and perceptible visuals
+7) Used Slide Slicer method for management to have claerer view on revenues for each period 
 
 
 ### Explaratory Data Analysis 
