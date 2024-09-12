@@ -67,9 +67,11 @@ EDA involved in the following report to answer key questions, such as:
 
 Data Analysis featured following syntaxes:
 
+To calculate ages
 ```Power BI
 Table.AddColumn(#"Removed Columns3", "Age", each Date.From(DateTime.Date(2020,01,01)) - [Birth date], type duration)
 ```
+To group by ages
 ```Power BI
 Table.AddColumn(#"Renamed Columns", "Age Group", each if [Age] < 18 then "< 18" else if [Age] < 25
 ```
