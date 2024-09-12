@@ -9,7 +9,6 @@
 - [Data Analysis](#data-analysis)
 
 
-
 ### Project Overview 
 ---
 
@@ -31,13 +30,13 @@
 
 The initial data took several tasks to elaborate
 
-1) Data Loading and inspection
-2) Clearing off **extra null values**
+1) Data Loading and inspection.
+2) Clearing off **extra null values**.
 3) Establishing relationships between tables.
 4) Added columns to enable more advanced DAX calculations.
-5) DAX calculations
-6) Built concise and perceptible visuals
-7) Used Slide Slicer method for management to have claerer view on revenues for each period 
+5) DAX calculations.
+6) Built concise and perceptible visuals.
+7) Used Slide Slicer method for management to have claerer view on revenues for each period.
 
 
 ### Explaratory Data Analysis 
