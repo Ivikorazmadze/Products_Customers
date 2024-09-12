@@ -10,6 +10,7 @@
 - [Results/Findings](#resultsfindings)
 - [Limitations](#limitations)
 
+
 ### Project Overview 
 ---
 
@@ -18,12 +19,14 @@
 ![2](https://github.com/user-attachments/assets/2f008166-82f7-438e-9266-2ea7432372d7)
 ![3](https://github.com/user-attachments/assets/4c2285f1-7d88-408d-84e2-a04f48859662)
 
+
 ### Tools
 ---
 
 - Data Source - Excel [Download Here](https://www.microsoft.com/en-us/microsoft-365/p/excel-home-and-student/CFQ7TTC0HLKR?activetab=pivot:overviewtab)
 
 - Data Visualization - PowerBI [Download here](https://dev.mysql.com/downloads/workbench/)
+  
 
 ### Data Preparation
 ---
@@ -31,15 +34,40 @@
 The initial data took several tasks to elaborate
 
 1) Data Loading and inspection
+
+2) Clearing off **extra null values**
+
+3) Establishing relationships between tables.
   
-2) Handling Missing Values
+4) Added columns to enable more advanced DAX calculations.
 
-3) Clearing off **extra null values**
+5) DAX calculations
 
-4) 
-  
-5) Data formating
+6) Built concise and perceptible visuals
 
 
+### Explaratory Data Analysis 
+---
 
+EDA involved in the following report to answer key questions, such as:
+
+- **Gender Distribution**
+
+- **Grouping Customers in age groups**
+
+- **Top Customers and Highest sold Products** 
+
+- **Popular Weekdays by sales**
+
+- **Revenue by Country and Categories**
+
+
+  ### Data Analysis
+---
+
+Data Analysis featured following syntaxes:
+
+```Power BI
+Table.AddColumn(#"Removed Columns3", "Age", each Date.From(DateTime.Date(2020,01,01)) - [Birth date], type duration)
+```
 
