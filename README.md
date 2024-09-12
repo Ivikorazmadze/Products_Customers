@@ -76,7 +76,7 @@ To group by ages
 Table.AddColumn(#"Renamed Columns", "Age Group", each if [Age] < 18 then "< 18" else if [Age] < 25 then "18 to 24" else if [Age] < 35 then "24 to 34" else if [Age] < 45 then "34 to 45" else if [Age] < 55 then "45 to 55" else if [Age] < 65 then "55 to 64" else if [Age] > 64 then 64 else null)
 ```
 
-```dax
+```sql
 UPDATE project
 SET birthdate = CASE
   WHEN birthdate LIKE '%/%' THEN DATE_FORMAT(STR_TO_DATE(birthdate, '%m/%d/%Y'), '%Y-%m-%d')
