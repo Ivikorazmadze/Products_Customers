@@ -68,20 +68,14 @@ EDA involved in the following report to answer key questions, such as:
 Data Analysis featured following syntaxes:
 
 To calculate ages
+
 ```dax
 Table.AddColumn(#"Removed Columns3", "Age", each Date.From(DateTime.Date(2020,01,01)) - [Birth date], type duration)
-```
+
 To group by ages
+
 ```dax
 Table.AddColumn(#"Renamed Columns", "Age Group", each if [Age] < 18 then "< 18" else if [Age] < 25 then "18 to 24" else if [Age] < 35 then "24 to 34" else if [Age] < 45 then "34 to 45" else if [Age] < 55 then "45 to 55" else if [Age] < 65 then "55 to 64" else if [Age] > 64 then 64 else null)
-```
 
-```sql
-UPDATE project
-SET birthdate = CASE
-  WHEN birthdate LIKE '%/%' THEN DATE_FORMAT(STR_TO_DATE(birthdate, '%m/%d/%Y'), '%Y-%m-%d')
-  WHEN birthdate LIKE '%-%' THEN DATE_FORMAT(STR_TO_DATE(birthdate, '%m-%d-%y'), '%Y-%m-%d')
-  ELSE NULL
-END
-```
+
 
