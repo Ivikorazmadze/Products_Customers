@@ -7,8 +7,6 @@
 - [Data Preparation](#data-preparation)
 - [Explaratory Data Analysis](#explaratory-data-analysis)
 - [Data Analysis](#data-analysis)
-- [Results/Findings](#resultsfindings)
-- [Limitations](#limitations)
 
 
 ### Project Overview 
@@ -34,15 +32,10 @@
 The initial data took several tasks to elaborate
 
 1) Data Loading and inspection
-
 2) Clearing off **extra null values**
-
 3) Establishing relationships between tables.
-  
 4) Added columns to enable more advanced DAX calculations.
-
 5) DAX calculations
-
 6) Built concise and perceptible visuals
 
 
@@ -76,5 +69,16 @@ To group by ages
 ```dax
 Table.AddColumn(#"Renamed Columns", "Age Group", each if [Age] < 18 then "< 18" else if [Age] < 25 then "18 to 24" else if [Age] < 35 then "24 to 34" else if [Age] < 45 then "34 to 45" else if [Age] < 55 then "45 to 55" else if [Age] < 65 then "55 to 64" else if [Age] > 64 then 64 else null)
 ```
+
+
+### Results/Findings
+---
+
+The analysis are as follows:
+
+- Genders are relatively close to one another.
+- Population under age 18 most frequently visit doctors.
+- Mondays are most visited days for doctors. we can conclude it is due to starting of the week.
+- Hospitals in cities are visited according to the population of each city.
 
 
